@@ -1,4 +1,4 @@
-package com.example.tictactoe;
+package example.com.tictactoe;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,14 +18,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class TTTActivity extends ActionBarActivity {
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class TTTActivity extends AppCompatActivity {
 
     // TAG for logging
     private static final String TAG = "TTTActivity";
 
     // server to connect to
     protected static final int GROUPCAST_PORT = 20000;
-    protected static final String GROUPCAST_SERVER = "cs283.hopto.org";
+    protected static final String GROUPCAST_SERVER = "csx283.hopto.org";
 
     // networking
     Socket socket = null;
